@@ -16,7 +16,7 @@ public class ComprehendService implements CommandLineRunner {
     }
 
     public void getSentiment(){
-        String text = "I really enjoyed my vacation in Hawaii. The beaches were beautiful and the weather was perfect!";
+        String text = "I hate you you are the most disgusting person i ever met";
         DetectSentimentRequest request = new DetectSentimentRequest().withText(text).withLanguageCode("en");
         DetectSentimentResult result = comprehendClient.detectSentiment(request);
         String sentiment = result.getSentiment();

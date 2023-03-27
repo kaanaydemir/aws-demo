@@ -75,10 +75,10 @@ public class S3Service implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        /*create();
+        create();
         checkIsExist();
         uploadFile();
         deleteBucketItems();
-        delete();*/
+        delete();
     }
 }

@@ -11,6 +11,8 @@ It includes the following features:
 * List objects
 * Delete an object
 * Delete a bucket
+* Text sentiment analysis using AWS Comprehend
+* Textract document analysis
 
 ### Requirements
 
