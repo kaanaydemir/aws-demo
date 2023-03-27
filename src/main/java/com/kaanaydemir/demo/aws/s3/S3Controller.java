@@ -4,12 +4,13 @@ import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.model.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Service;
 
 import java.io.File;
 import java.util.List;
 
 
-@Configuration
+@Service
 public class S3Controller implements CommandLineRunner {
 
     private final AmazonS3 s3Client;
