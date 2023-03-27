@@ -7,11 +7,11 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Service;
 
 @Service
-public class ComprehendController implements CommandLineRunner {
+public class ComprehendService implements CommandLineRunner {
 
     private final AmazonComprehend comprehendClient;
 
-    public ComprehendController(AmazonComprehend comprehendClient) {
+    public ComprehendService(AmazonComprehend comprehendClient) {
         this.comprehendClient = comprehendClient;
     }
 

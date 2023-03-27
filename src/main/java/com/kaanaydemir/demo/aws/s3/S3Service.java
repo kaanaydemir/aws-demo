@@ -3,7 +3,6 @@ package com.kaanaydemir.demo.aws.s3;
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.model.*;
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Service;
 
 import java.io.File;
@@ -11,11 +10,11 @@ import java.util.List;
 
 
 @Service
-public class S3Controller implements CommandLineRunner {
+public class S3Service implements CommandLineRunner {
 
     private final AmazonS3 s3Client;
 
-    public S3Controller(AmazonS3 s3Client) {
+    public S3Service(AmazonS3 s3Client) {
         this.s3Client = s3Client;
     }
 
@@ -76,10 +75,10 @@ public class S3Controller implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        create();
+        /*create();
         checkIsExist();
         uploadFile();
         deleteBucketItems();
-        delete();
+        delete();*/
     }
 }
